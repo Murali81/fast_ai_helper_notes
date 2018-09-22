@@ -1,7 +1,7 @@
 Sources : http://forums.fast.ai/t/precompute-true/7316/50
 
 Other sources: https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e
-
+               https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0
 Hello,
 
 This is my understanding of precompute, unfreeze, etc. (and whatever is done jupyter notebooks after the 2 first lessons) :
