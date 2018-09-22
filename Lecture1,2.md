@@ -1,5 +1,6 @@
 Sources : http://forums.fast.ai/t/precompute-true/7316/50
 
+Other sources: https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e
 
 Hello,
 
