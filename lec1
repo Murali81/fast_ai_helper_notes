@@ -8,3 +8,14 @@ May performs worse.
 # Gradual Learning rates:
 
 Instead of just freezing the bottom layers or updating them completely, update them minimally, i.e through differential learning rates. Lower layers have lesser learning rates than the top ones. So, bottom ones are updated in a small way, retaining what they learnt during training on ImageNet.
+
+# what layers learn what ?
+CNNs learn things in a heirarchically abstractive fashion. 1st layer focuses on edges and corners. 2nd layers convolve everything from 1st layer and focuses on some higher parts
+
+# Important code chunks
+
+Datasetloader ==> ImageDataBunch class does that for you. Takes in regex format to check for labels inside images' names. Also takes batch size, transformations (for data augmentation).
+
+model ==> create_cnn takes dataloader object and architecture you want to use. Takes metrics as well.
+
+Interpretation class helps you see where your model went wrong. Input is the "learn" object from above. One can plot their top losses, confusion matrix and most confused pairs as well.
