@@ -19,3 +19,5 @@ Datasetloader ==> ImageDataBunch class does that for you. Takes in regex format 
 model ==> create_cnn takes dataloader object and architecture you want to use. Takes metrics as well.
 
 Interpretation class helps you see where your model went wrong. Input is the "learn" object from above. One can plot their top losses, confusion matrix and most confused pairs as well.
+
+# Error rate is the number of instances that went wrong. Error rate calculation is "1 - accuracy". Accuracy is # (target==pred).

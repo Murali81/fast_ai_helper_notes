@@ -1,0 +1,26 @@
+How to create dataset online
+
+Google search the images and when you have the images, press "Ctrl-Shift-J" and place some javascript code.
+
+You can watch the notebook for better understanding and place some javascript code.
+
+You can watch the notebook for better understanding..
+
+
+
+
+Problems in Models (deep learning):
+
+	1. High/Low LR
+	2. Train loss higher than validation loss
+	3. Too few epochs
+	4. Too many epochs
+
+Image is a matrix of numbers (0-255)
+
+DL is a mathematical function that processes input matrices/vectors to give probs of classes. Find the one with max prob as the target class.
+
+Error rate calculation is "1 - accuracy"
+
+LR "0.003" is better for most cases. But you can then use Lr_finder().
+
