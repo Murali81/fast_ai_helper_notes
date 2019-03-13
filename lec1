@@ -1,0 +1,10 @@
+Tranfer Learning
+Use a pretrained model (ResNet). Huge architecture with many layers. We remove last layers and include our layers with our softmax with no. of classes we need.
+
+Then freeze layers of resnet and train only our layers.
+
+May performs worse.
+
+# Gradual Learning rates:
+
+Instead of just freezing the bottom layers or updating them completely, update them minimally, i.e through differential learning rates. Lower layers have lesser learning rates than the top ones. So, bottom ones are updated in a small way, retaining what they learnt during training on ImageNet.
