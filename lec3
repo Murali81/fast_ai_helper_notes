@@ -24,3 +24,9 @@ learn.recorder.plot_losses() plots train and validation losses. If you see the g
 
 Ans. If you plot learning rate for a cycle, you can see that your learning rate goes up and falls down for that cycle. Note that a cycle can have many epochs. (learn.fit_one_cycle(5,slice(lr)))
 
+#
+Learning Rate Annealing : We don't have solution/parameter space that is all curvy, but is bumpy. LR must be high enough to jump over the bumps. Once you get close to best answer, you want LR to be small, to take smaller & smaller steps.
+
+Gradually increasing LR helps to explore solution space.
+
+
