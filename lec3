@@ -1,0 +1,26 @@
+# Multi-label classification
+
+ImageList class is of great use.
+
+Since, multiple classes are predicted for a single image not just a single class, we use different accuracy metric. We calculate accuracy for all the classes that are greater than a particular threshold and aggregate them to calculate acc for a single image.
+
+Same goes for other metrics.
+Architecture is same i.e ResNet34,50 etc.
+
+
+CAMVID :
+
+Image to Mask. Multiple Masks. Each pixel value is a class.
+
+Multi-Resolution Analysis seems to work pretty well i.e processing the image at different dimensions. This is often used as a standard practice in classical Digital Image Processing Techniques.
+
+Architecture used is uNet. Input and Output is Image. Involves Deconvolution Neural Network.
+
+learner.create_unet instead of create_cnn..
+
+Everything else is same as Lesson 1,2.
+
+learn.recorder.plot_losses() plots train and validation losses. If you see the graph, you'll notice that losses go up initially and then settle down. Why is it?
+
+Ans. If you plot learning rate for a cycle, you can see that your learning rate goes up and falls down for that cycle. Note that a cycle can have many epochs. (learn.fit_one_cycle(5,slice(lr)))
+

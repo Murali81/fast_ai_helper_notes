@@ -16,6 +16,16 @@ Problems in Models (deep learning):
 	3. Too few epochs
 	4. Too many epochs
 
+If LR is too less, training loss will be higher than validation loss, which is not appreciated. If that's the case, train more or increase LR.
+
+Running too less epochs is similar to too less LR.
+
+Running too many epochs may let the model overfit. indicator is error decreases and then starts increasing.
+
+Always, training loss is supposed to be less than val loss.
+
+##################################################################################################################################################
+
 Image is a matrix of numbers (0-255)
 
 DL is a mathematical function that processes input matrices/vectors to give probs of classes. Find the one with max prob as the target class.
@@ -24,3 +34,14 @@ Error rate calculation is "1 - accuracy"
 
 LR "0.003" is better for most cases. But you can then use Lr_finder().
 
+Unbalanced dataset works. Make it work. Simple trick is to copy the instances and make it balanced.
+
+###################################################################################################################################################
+
+SGD!!! (Stochastic Gradient Descent)
+
+Duh!!! You know it.
+
+
+
+ 
